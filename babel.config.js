@@ -11,7 +11,10 @@ module.exports = {
           config: './app/config',
           navigations: './app/navigations',
           utils: './app/utils',
-          theme: './app/theme'
+          theme: './app/theme',
+          navigators: './app/navigations/navigators',
+          assets: './app/assets',
+          i18n: './app/i18n',
         },
       },
     ],

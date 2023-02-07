@@ -1,29 +1,26 @@
 export const colors = {
-  primary: {
-    50: '#eef2ff',
-    100: '#e0e7ff',
-    200: '#c7d2fe',
-    300: '#a5b4fc',
-    400: '#818cf8',
-    500: '#6366f1',
-    600: '#4f46e5',
-    700: '#4338ca',
-    800: '#3730a3',
-    900: '#312e81',
-  },
-  darkblue: {
-    50: '#dbf4ff',
-    100: '#addbff',
-    200: '#7cc2ff',
-    300: '#4aa9ff',
-    400: '#1a91ff',
-    500: '#0077e6',
-    600: '#005db4',
-    700: '#004282',
-    800: '#002851',
-    900: '#000e21',
+  primary: '#3275BB',
+  lightPrimary: '#F0F7FF',
+  primary2: '#4695E7',
+  secondary: '#D8E5F8',
+  primaryGray: '#708298',
+  darkGreen: '#0C9600',
+  green: '#33C16C',
+  lightGreen: '#C6FFD2',
+  darkYellow: '#CC8821',
+  lightYellow: '#FFF3E1',
+  white: '#FFFFFF',
+  red: {
+    dark: '#FF4343',
+    light: '#FFD1D1',
   },
   gray: {
+    light: '#D9D9D9',
+    dark: '#8C8C8C',
+    lightest: '#ECECEC',
+    grayText: '#828282'
+  },
+  shade: {
     50: '#fafafa',
     100: '#f4f4f5',
     200: '#e4e4e7',
@@ -34,5 +31,8 @@ export const colors = {
     700: '#3f3f46',
     800: '#27272a',
     900: '#18181b',
+  },
+  shadow: {
+    gray: 'rgba(0, 0, 0, 0.25)',
   },
 };
