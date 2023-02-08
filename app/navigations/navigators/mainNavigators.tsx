@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { screens } from 'navigations/screens.constants';
 import LoaderScreen from 'screens/loader';
 import IntroScreen from 'screens/intro';
+import LegalScreen from 'screens/legal';
 
 type Props = {}
 
@@ -18,6 +19,7 @@ const MainNavigator = (props: Props) => {
       }}>
       <Stack.Screen name={screens.LOADER} component={LoaderScreen} />
       <Stack.Screen name={screens.INTRO} component={IntroScreen} />
+      <Stack.Screen name={screens.LEGAL} component={LegalScreen} />
     </Stack.Navigator>
   );
 }

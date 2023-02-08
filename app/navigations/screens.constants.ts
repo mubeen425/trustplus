@@ -1,4 +1,5 @@
 export const screens = {
   INTRO: 'IntroScreen',
-  LOADER: 'LoaderScreen'
+  LOADER: 'LoaderScreen',
+  LEGAL: 'LegalScreen',
 };

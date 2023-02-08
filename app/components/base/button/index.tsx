@@ -10,6 +10,7 @@ type Props = {
   backgroundColor?: string;
   textColor?: string;
   marginBottom?: number;
+  onClick: any
 };
 
 const AppButton = (props: Props) => {
@@ -19,9 +20,11 @@ const AppButton = (props: Props) => {
     backgroundColor = colors.primary,
     textColor = colors.white,
     marginBottom = 0,
+    onClick
   } = props;
   return (
     <TouchableOpacity
+      onPress={onClick}
       style={[
         styles.container,
         {
@@ -43,7 +46,6 @@ const styles = StyleSheet.create({
     padding: widthRatio(4),
     alignItems: 'center',
     justifyContent: 'center',
-    marginHorizontal: widthRatio(4),
     borderRadius: widthRatio(1),
   },
   text: {

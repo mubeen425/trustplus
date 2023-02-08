@@ -17,6 +17,14 @@
                         "heading": "Explore decentralized apps",
                         "subHeading": "Make your dreams come true in digital world."
                       }
+                    },
+                    "legal": {
+                      "legal": "Legal",
+                      "heading": "Please review the Trust Plus Wallet Terms of Service and Privacy Policy.",
+                      "privacy_policey": "Privacy Policy",
+                      "terms_of_services": "Terms of Services",
+                      "accept_services": "I’ve read and accept the Terms of Service and\nPrivacy Policy.",
+                      "continue": "CONTINUE"
                     }
           },
           "text": {

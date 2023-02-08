@@ -8,6 +8,8 @@ import {images} from 'assets/images';
 import EngJson from 'i18n/english.json';
 import {textRatio} from 'utils/functions/textRatio';
 import AppButton from 'components/base/button';
+import { navigate } from 'navigations/navRef';
+import { screens } from 'navigations/screens.constants';
 
 type Props = {};
 
@@ -76,8 +78,11 @@ const IntroScreen = (props: Props) => {
         showNextButton={false}
         showDoneButton={false}
       />
-      <AppButton title={EngJson.text.new_wallet} />
+      <AppButton onClick={() => {
+        navigate(screens.LEGAL)
+      }} title={EngJson.text.new_wallet} />
       <AppButton
+        onClick={() => {}}
         backgroundColor={colors.white}
         marginTop={1}
         marginBottom={4}

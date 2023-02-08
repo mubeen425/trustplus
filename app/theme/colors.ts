@@ -9,16 +9,20 @@ export const colors = {
   lightGreen: '#C6FFD2',
   darkYellow: '#CC8821',
   lightYellow: '#FFF3E1',
+  borderColor: '#F2F2F2',
   white: '#FFFFFF',
   red: {
     dark: '#FF4343',
     light: '#FFD1D1',
   },
+
   gray: {
     light: '#D9D9D9',
     dark: '#8C8C8C',
     lightest: '#ECECEC',
-    grayText: '#828282'
+    grayText: '#828282',
+    grayText2: '#545454',
+    grayText3: '#818181',
   },
   shade: {
     50: '#fafafa',
