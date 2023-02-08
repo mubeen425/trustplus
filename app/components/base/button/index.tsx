@@ -10,7 +10,8 @@ type Props = {
   backgroundColor?: string;
   textColor?: string;
   marginBottom?: number;
-  onClick: any
+  onClick: any;
+  isDisabled: boolean;
 };
 
 const AppButton = (props: Props) => {
@@ -20,17 +21,21 @@ const AppButton = (props: Props) => {
     backgroundColor = colors.primary,
     textColor = colors.white,
     marginBottom = 0,
-    onClick
+    onClick,
+    isDisabled= false
   } = props;
+  const disabledStyle = isDisabled ? {backgroundColor: colors.gray.dark2} : {};
   return (
     <TouchableOpacity
       onPress={onClick}
+      disabled={isDisabled}
       style={[
         styles.container,
         {
           marginTop: heightRatio(marginTop),
           backgroundColor,
           marginBottom: heightRatio(marginBottom),
+          ...disabledStyle,
         },
       ]}>
       <Text style={[styles.text, {color: textColor}]}>{title}</Text>

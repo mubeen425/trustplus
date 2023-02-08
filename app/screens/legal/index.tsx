@@ -7,6 +7,7 @@ import { textRatio } from 'utils/functions/textRatio'
 import EngJson from 'i18n/english.json';
 import CheckboxWithText from 'components/base/checkbox'
 import AppButton from 'components/base/button'
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
 type Props = {}
 
@@ -23,17 +24,33 @@ const LegalScreen = (props: Props) => {
             <Text style={styles.button1Text}>
               {EngJson.pages.legal.privacy_policey}
             </Text>
+            <MaterialIcons
+              name="keyboard-arrow-right"
+              size={widthRatio(7)}
+              color={colors.gray.grayText3}
+            />
           </View>
+          <View style={styles.hr} />
           <View style={styles.button1}>
             <Text style={styles.button1Text}>
               {EngJson.pages.legal.terms_of_services}
             </Text>
+            <MaterialIcons
+              name="keyboard-arrow-right"
+              size={widthRatio(7)}
+              color={colors.gray.grayText3}
+            />
           </View>
         </View>
       </View>
       <View style={styles.bottomArea}>
         <CheckboxWithText text={EngJson.pages.legal.accept_services} />
-        <AppButton title={EngJson.pages.legal.continue} onClick={undefined} marginTop={2} />
+        <AppButton
+          title={EngJson.pages.legal.continue}
+          onClick={undefined}
+          marginTop={2}
+          isDisabled={true}
+        />
       </View>
     </View>
   );
@@ -57,6 +74,7 @@ const styles = StyleSheet.create({
     fontSize: textRatio(22),
     color: colors.white,
   },
+  
   topContainer: {
     paddingHorizontal: widthRatio(10),
     marginTop: heightRatio(3),
@@ -72,8 +90,19 @@ const styles = StyleSheet.create({
     borderRadius: widthRatio(3),
     marginTop: heightRatio(2),
   },
+  hr: {
+          display: 'flex',
+          width: '90%',
+          borderWidth:0.5,
+          borderColor: colors.gray.grayText4,
+          marginHorizontal: widthRatio(4)
+  },
   button1: {
     padding: widthRatio(3.5),
+    display: 'flex',
+    alignItems: 'center',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
   },
   button1Text: {
     fontSize: textRatio(16),

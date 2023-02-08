@@ -99,6 +99,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: colors.white,
+    paddingHorizontal: widthRatio(5)
   },
   itemContainer: {
     flex: 1,

@@ -19,10 +19,12 @@ export const colors = {
   gray: {
     light: '#D9D9D9',
     dark: '#8C8C8C',
+    dark2: '#AAAAAA',
     lightest: '#ECECEC',
     grayText: '#828282',
     grayText2: '#545454',
     grayText3: '#818181',
+    grayText4: '#E7E7E7',
   },
   shade: {
     50: '#fafafa',

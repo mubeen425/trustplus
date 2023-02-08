@@ -13,7 +13,11 @@ const CheckboxWithText = (props: Props) => {
   const {text} = props;
   return (
     <View style={styles.checkboxComp}>
-      <Checkbox  value="test" accessibilityLabel="This is a dummy checkbox" />
+      <Checkbox
+        colorScheme="info"
+        value="test"
+        accessibilityLabel="This is a dummy checkbox"
+      />
       <Text style={styles.text}>{text}</Text>
     </View>
   );
