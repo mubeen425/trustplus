@@ -35,11 +35,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   dot: {
-    width: widthRatio(3),
-    height: widthRatio(3),
+    width: widthRatio(3.5),
+    height: widthRatio(3.5),
     borderWidth: 1,
     borderColor: colors.primary,
-    borderRadius: widthRatio(1.5),
+    borderRadius: widthRatio(1.75),
     marginHorizontal: widthRatio(2),
   },
 });

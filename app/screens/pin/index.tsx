@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
     marginBottom: heightRatio(2.2),
   },
   hr: {
-    borderBottomWidth: 0.7,
+    borderBottomWidth: 0.9,
     borderColor: colors.primary,
     width: widthRatio(60),
     marginTop: heightRatio(4),
