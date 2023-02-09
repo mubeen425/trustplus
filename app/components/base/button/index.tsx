@@ -11,7 +11,7 @@ type Props = {
   textColor?: string;
   marginBottom?: number;
   onClick: any;
-  isDisabled: boolean;
+  isDisabled?: boolean;
 };
 
 const AppButton = (props: Props) => {

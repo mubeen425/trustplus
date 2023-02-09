@@ -8,6 +8,8 @@ import EngJson from 'i18n/english.json';
 import CheckboxWithText from 'components/base/checkbox'
 import AppButton from 'components/base/button'
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import { navigate } from 'navigations/navRef'
+import { screens } from 'navigations/screens.constants'
 
 type Props = {}
 
@@ -47,9 +49,11 @@ const LegalScreen = (props: Props) => {
         <CheckboxWithText text={EngJson.pages.legal.accept_services} />
         <AppButton
           title={EngJson.pages.legal.continue}
-          onClick={undefined}
+          onClick={() => {
+          navigate(screens.PIN)      
+          }}
           marginTop={2}
-          isDisabled={true}
+          // isDisabled={true}
         />
       </View>
     </View>

@@ -5,6 +5,7 @@ import { screens } from 'navigations/screens.constants';
 import LoaderScreen from 'screens/loader';
 import IntroScreen from 'screens/intro';
 import LegalScreen from 'screens/legal';
+import PinScreen from 'screens/pin';
 
 type Props = {}
 
@@ -17,9 +18,15 @@ const MainNavigator = (props: Props) => {
       screenOptions={{
         headerShown: false,
       }}>
-      <Stack.Screen name={screens.LOADER} component={LoaderScreen} />
-      <Stack.Screen name={screens.INTRO} component={IntroScreen} />
-      <Stack.Screen name={screens.LEGAL} component={LegalScreen} />
+      <Stack.Group>
+        <Stack.Screen name={screens.LOADER} component={LoaderScreen} />
+        <Stack.Screen name={screens.INTRO} component={IntroScreen} />
+        <Stack.Screen name={screens.LEGAL} component={LegalScreen} />
+      </Stack.Group>
+
+      <Stack.Group>
+        <Stack.Screen name={screens.PIN} component={PinScreen} />
+      </Stack.Group>
     </Stack.Navigator>
   );
 }
