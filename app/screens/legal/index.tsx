@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
   },
   
   topContainer: {
-    paddingHorizontal: widthRatio(10),
+    paddingHorizontal: widthRatio(6),
     marginTop: heightRatio(3),
   },
   topHeading: {
@@ -112,6 +112,7 @@ const styles = StyleSheet.create({
   bottomArea: {
           position: 'absolute',
           bottom: heightRatio(3),
-          paddingHorizontal: widthRatio(10)
+          paddingHorizontal: widthRatio(6),
+          width: widthRatio(100)
   }
 });
