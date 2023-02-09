@@ -25,6 +25,11 @@
                       "terms_of_services": "Terms of Services",
                       "accept_services": "I’ve read and accept the Terms of Service and\nPrivacy Policy.",
                       "continue": "CONTINUE"
+                    },
+                    "pin": {
+                      "create_pass": "Create Passcode",
+                      "recreate_password": "Re-Enter Passcode",
+                      "textbottom": "This passcode is for your extra security when using the app"
                     }
           },
           "text": {
